@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "publications",
+  "info": {
+    "name": "publication",
+    "description": "All books and publications."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "category": {
+      "model": "category",
+      "via": "publications"
+    }
+  }
+}
