@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "authors",
+  "info": {
+    "name": "author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "titles": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "publications": {
+      "collection": "publication",
+      "via": "authors",
+      "dominant": true
+    }
+  }
+}

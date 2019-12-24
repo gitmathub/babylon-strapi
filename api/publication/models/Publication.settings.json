@@ -3,26 +3,68 @@
   "collectionName": "publications",
   "info": {
     "name": "publication",
-    "description": "All books and publications."
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": [
-      "created_at",
-      "updated_at"
-    ],
+    "timestamps": true,
     "comment": ""
   },
   "attributes": {
     "title": {
-      "required": true,
       "type": "string"
     },
+    "isbn": {
+      "type": "string"
+    },
+    "issn": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "pages": {
+      "type": "integer"
+    },
+    "figures": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "text"
+    },
+    "abstract": {
+      "type": "text"
+    },
     "description": {
-      "type": "richtext"
+      "type": "text"
+    },
+    "picture": {
+      "type": "string"
+    },
+    "ordinal": {
+      "type": "float"
+    },
+    "price": {
+      "type": "float"
+    },
+    "is_featured": {
+      "type": "boolean"
+    },
+    "is_sold_out": {
+      "type": "boolean"
     },
     "category": {
       "model": "category",
+      "via": "publications"
+    },
+    "authors": {
+      "collection": "author",
       "via": "publications"
     }
   }
