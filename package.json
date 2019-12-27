@@ -1,8 +1,8 @@
 {
   "name": "babylon-stapi",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "Used as CSM for Babylon-Metropolis",
   "scripts": {
     "nodeversion": "node -v ",
     "develop": "npm run nodeversion && strapi develop",
@@ -27,9 +27,6 @@
   },
   "author": {
     "name": "mat"
-  },
-  "strapi": {
-    "uuid": "4afac70a-6a4c-4089-bdf3-c0cf563b293f"
   },
   "engines": {
     "node": ">=10.0.0",

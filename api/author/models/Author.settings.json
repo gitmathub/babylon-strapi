@@ -34,8 +34,8 @@
     },
     "publications": {
       "collection": "publication",
-      "via": "authors",
-      "dominant": true
+      "dominant": true,
+      "via": "authors"
     }
   }
 }
