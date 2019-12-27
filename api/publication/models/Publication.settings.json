@@ -7,7 +7,7 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": ["created_at", "updated_at"],
     "comment": ""
   },
   "attributes": {
@@ -27,7 +27,8 @@
       "type": "date"
     },
     "pages": {
-      "type": "integer"
+      "type": "integer",
+      "default": ""
     },
     "figures": {
       "type": "integer"
@@ -36,13 +37,13 @@
       "type": "string"
     },
     "properties": {
-      "type": "text"
+      "type": "richtext"
     },
     "abstract": {
-      "type": "text"
+      "type": "richtext"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
     "picture": {
       "type": "string"
