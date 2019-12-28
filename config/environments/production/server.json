@@ -1,6 +1,6 @@
 {
-  "host": "babylon-metropolis.de",
-  "port": 1337,
+  "host": "babylon-metropolis.com",
+  "port": 65332,
   "production": true,
   "proxy": {
     "enabled": false

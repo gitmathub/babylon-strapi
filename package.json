@@ -4,10 +4,9 @@
   "version": "1.0.0",
   "description": "Used as CSM for Babylon-Metropolis",
   "scripts": {
-    "nodeversion": "node -v ",
-    "develop": "npm run nodeversion && strapi develop",
-    "start": "npm run nodeversion && strapi start",
-    "build": "npm run nodeversion && strapi build",
+    "develop": "strapi develop",
+    "start": "NODE_ENV=production strapi start",
+    "build": "strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
